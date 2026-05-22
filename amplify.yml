@@ -1,13 +1,14 @@
 version: 1
+appRoot: apps/web
 frontend:
   phases:
     preBuild:
       commands:
         - npm install -g pnpm@9
-        - pnpm install --no-frozen-lockfile
+        - cd ../.. && pnpm install --no-frozen-lockfile
     build:
       commands:
-        - pnpm build
+        - cd ../.. && pnpm --filter web build
   artifacts:
     baseDirectory: .next
     files:
