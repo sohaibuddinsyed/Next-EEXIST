@@ -1,0 +1,17 @@
+{
+  "name": "next-pnpm-eexist-repro",
+  "private": true,
+  "packageManager": "pnpm@8.15.9",
+  "scripts": {
+    "build": "next build"
+  },
+  "dependencies": {
+    "next": "16.1.6",
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@types/node": "25.9.1",
+    "@types/react": "19.2.15"
+  }
+}
